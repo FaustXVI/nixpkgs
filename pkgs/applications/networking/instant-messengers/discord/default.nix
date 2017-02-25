@@ -7,12 +7,12 @@
 stdenv.mkDerivation rec {
 
     pname = "discord";
-    version = "0.0.11";
+    version = "0.0.15";
     name = "${pname}-${version}";
 
     src = fetchurl {
         url = "https://cdn-canary.discordapp.com/apps/linux/${version}/${pname}-canary-${version}.tar.gz";
-        sha256 = "1lk53vm14vr5pb8xxcx6hinpc2mkdns2xxv0bfzxvlmhfr6d6y18";
+        sha256 = "093kyh7qbv5f4vg9xxv5gf68dp88aa2q3dhr5089vczkmdygkim0";
     };
 
     libPath = stdenv.lib.makeLibraryPath [
